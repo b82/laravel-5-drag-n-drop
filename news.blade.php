@@ -12,6 +12,7 @@
 			</div>
 		</div>
 
+		{{-- $dataCount comes from NewsController of course.. --}}
 		@if($dataCount > 0)
 
 			<ul id="post-list" class="news-list">

@@ -25,6 +25,7 @@ class DragndropController extends Controller {
     		$arrayOrder[] = $sortName[1];
     	}
 
+    	// oder_post is a custom column updated every time you drag-n-drop an element
     	foreach($arrayOrder as $key => $value){
     		DB::table('news')->where('id', $value)->update(['order_posts' => $key + 1]);
     	}
